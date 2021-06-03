@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'medicine.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mydb',
-        'USER': 'root',
-        'PASSWORD': '1234',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'NAME': 'joon2301$mydb',
+        'USER': 'joon2301',
+        'PASSWORD': '1q2w3e4r!6',
+        'HOST': 'joon2301.mysql.pythonanywhere-services.com',
+        #'PORT': '3306',
     }
 }
 
