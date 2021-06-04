@@ -18,12 +18,14 @@ from django.urls import include
 from django.contrib import admin
 from django.urls import path
 from medicine_data import views
+from models import views as knn
 router = routers.DefaultRouter()
 router.register(r'Korean_Query',views.Koreanviewset)
 router.register(r'Foreign_All',views.Foreignviewset)
 
 # router.register(r'create/',views.Createviewset,basename='todo_create')
 urlpatterns = [
+    path('kn/',knn.knn_model),
     path('admin/', admin.site.urls),
     path('',include('medicine_data.urls')),
     path('',include('models.urls')),

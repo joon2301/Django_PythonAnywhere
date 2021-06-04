@@ -17,7 +17,11 @@ import pymysql
 from django.db import connection
 # Create your views here.
 
-def knn_model(sample):
+def knn_model(request):
+    print(request.method == "POST")
+    print(request["POST"])
+
+    sample= ""
     # MySQL Connection 연결
     conn = pymysql.connect(host='localhost',
                            user='root', password='1234', db='mydb', charset='utf8')
