@@ -21,9 +21,11 @@ from medicine_data import views
 router = routers.DefaultRouter()
 router.register(r'Korean_Query',views.Koreanviewset)
 router.register(r'Foreign_All',views.Foreignviewset)
+
 # router.register(r'create/',views.Createviewset,basename='todo_create')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('medicine_data.urls')),
+    path('',include('models.urls')),
     path('',include(router.urls)),
 ]
