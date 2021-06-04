@@ -1,0 +1,3 @@
+nltk==3.2.5
+Torchtext==0.2.1
+konlpy==0.5.2
